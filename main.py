@@ -2,12 +2,12 @@ import requests
 from twilio.rest import Client
 
 #twilio
-account_sid = "ACce3003bc616e18fbca94dbbed565d2a4"
-auth_token = "9ed2a753c39ad7824039c48c2a890057"
+account_sid = os.getenv("ACCOUNT_SID")
+auth_token = os.getenv("AUTH_TOKEN")
 CLIENT = Client(account_sid, auth_token)
 
 #open weather api
-MY_KEY = "07caee0baee9414850fa0e793fb77d46"
+MY_KEY = os.getenv("MY_KEY")
 PH_LATITUDE = "12.879721"
 PH_LONGITUDE = "121.774017"
 
